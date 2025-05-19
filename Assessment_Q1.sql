@@ -28,8 +28,8 @@ user_summary AS (
 
 -- Step 3: Filter users with both plan types and join names
 SELECT 
-    u.id AS user_id,
-    CONCAT(u.first_name, ' ', u.last_name) AS full_name, 
+    u.id AS owner_id,
+    CONCAT(u.first_name, ' ', u.last_name) AS name, 
     us.savings_count,
     us.investment_count,
     us.total_deposits
